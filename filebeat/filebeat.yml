@@ -1,0 +1,14 @@
+filebeat.inputs:
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/zeek/current/*.log
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/suricata/eve.json
+
+output.elasticsearch:
+  hosts: ["http://elasticsearch:9200"]
