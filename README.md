@@ -13,7 +13,7 @@ AI-powered cybersecurity system with Zeek + Suricata.
 ## Run
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/afyaguard.git
+git clone https://github.com/kakajoes47/AfyaguardSYS.git
 cd afyaguard
 sudo docker compose up -d
 pip install -r requirements.txt
