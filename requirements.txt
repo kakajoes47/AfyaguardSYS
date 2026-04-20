@@ -1,0 +1,14 @@
+# requirements.txt
+
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+plotly
+requests
+geopy
+ipinfo
+python-dotenv
+elasticsearch
