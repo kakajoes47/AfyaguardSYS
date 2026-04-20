@@ -1,0 +1,114 @@
+/* style.css */
+
+/* ===================================
+   PREMIUM ENTERPRISE SOC THEME
+   Cybersecurity Command Center UI
+=================================== */
+
+html, body, [class*="css"] {
+    font-family: Inter, sans-serif;
+    background: #020617;
+    color: #e2e8f0;
+}
+
+/* Background */
+body {
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(0, 255, 255, 0.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at top left,
+            rgba(59, 130, 246, 0.08),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #020617 0%,
+            #030712 100%
+        );
+}
+
+.main {
+    background: transparent;
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #67e8f9;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-shadow: 0 0 12px rgba(34, 211, 238, 0.15);
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: rgba(7, 17, 31, 0.95);
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #22d3ee;
+}
+
+/* Metric Cards */
+div[data-testid="stMetric"] {
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(34, 211, 238, 0.12);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+/* Data Tables */
+div[data-testid="stDataFrame"] {
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(
+        90deg,
+        #06b6d4,
+        #2563eb
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px);
+    transition: 0.2s ease;
+}
+
+/* Main Container */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Alerts */
+.stAlert {
+    border-radius: 14px;
+    border: 1px solid rgba(34, 211, 238, 0.10);
+}
+
+/* Map / Embedded Panels */
+iframe,
+.stMap {
+    border-radius: 18px;
+    overflow: hidden;
+  }
