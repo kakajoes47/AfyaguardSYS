@@ -1,0 +1,41 @@
+# filebeat/filebeat.yml
+
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/zeek/*.log
+
+    fields:
+      source: zeek
+      environment: healthcare_soc
+
+    fields_under_root: true
+
+# ===================================
+# ELASTICSEARCH OUTPUT
+# ===================================
+
+output.elasticsearch:
+  hosts: ["http://elasticsearch:9200"]
+
+# ===================================
+# KIBANA SETUP
+# ===================================
+
+setup.kibana:
+  host: "kibana:5601"
+
+# ===================================
+# LOGGING SETTINGS
+# ===================================
+
+logging.level: info
+
+logging.to_files: true
+
+logging.files:
+  path: /usr/share/filebeat/logs
+  name: filebeat
+  keepfiles: 7
+  permissions: 0644
